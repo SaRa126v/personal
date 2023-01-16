@@ -1,0 +1,25 @@
+
+
+
+#hajflex {
+ background-color: rgb(224, 95, 8);
+margin: 0 auto;
+width: 700px;
+height: 500px;
+display: flex;
+align-content: center;
+}
+
+.jojeflex1,
+.jojeflex3,
+.jojeflex5 {
+width: 70px;
+height: 70px;
+background-color: yellow;
+}
+.jojeflex2,
+.jojeflex4 {
+ width: 70px;
+ height: 70px;
+ background-color:rgb(168, 241, 21);
+ }
