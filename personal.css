@@ -119,6 +119,7 @@ main .container3 {
 
 .main4bottom,
 .main4top {
+ text-align: center;
  display: flex;
  flex-direction: row;
  justify-content:center;
@@ -127,10 +128,6 @@ main .container3 {
 
 .main1 {
  background-color: rgb(241, 244, 252);
-}
-.main4top,
-.main4bottom  {
-text-align: center;
 }
 
 .main1,
@@ -192,15 +189,23 @@ width: 300px;
 
 /* main4 headlines, images and divs ................................ */
 
-.main4 img {
+.main4 img,
+.main4 svg {
  width: 40px;
 }
 
-.main4 div {
+.main4 div div > div {
  margin: 20px 40px;
+ width: max-content;
 }
 
-.main4 h4:hover  {
+.main4 div div > div:hover h4 {
  color:rgba(153, 167, 248, 0.726) ;
- transition-duration: 00.5s;
+ transition-duration: 00.25s;
+ transition-delay: 00.10s;
+}
+.main4 div div > div:hover img {
+ background-color:rgba(153, 167, 248, 0.726) ;
+ transition-duration: 00.25s;
+ 
 }
