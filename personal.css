@@ -344,6 +344,7 @@ main p,
 
 /* feedback section................................................ */
 
+
 .feedback img {
  width: 35px;
 }
@@ -368,7 +369,7 @@ main p,
 
 .feedback {
  height: 550px;
- margin: 70px;
+ margin: 70px auto;
  background-color: #f7f7ff;
 }
 
@@ -411,7 +412,6 @@ main p,
 .posts {
  background-color: #f7f7ff;
  margin-top: 70px;
- margin-bottom: 70px;
 }
 
 .containerPosts {
@@ -452,4 +452,70 @@ margin-left: 10px;
 }
 .date img {
 vertical-align: middle;
+}
+
+/* logos section................................................... */
+
+.logos {
+ background: linear-gradient(0.25turn, #9d9cff, #7baffd, #3babec);
+height: 200px;
+display: flex;
+justify-content: center;
+}
+
+.containerLogos {
+ width: 1150px;
+ height: 200px;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.logos img {
+ opacity: 0.35;
+ transition-duration: 0.30s;
+}
+.logos img:hover {
+ opacity: 1;
+}
+/* footer section................................................... */
+
+footer {
+ background-color: rgb(3, 2, 32);
+display: flex;
+justify-content: center;
+}
+.containerFooter {
+ /* background-color: beige; */
+ 
+width: 1600px;
+height: 300px;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+
+footer p {
+ color: rgb(164, 164, 165);
+ width: 350px;
+}
+footer h6 {
+ color: rgb(238, 238, 241);
+}
+footer a {
+ color: #88a7ff;
+}
+
+footer input {
+ width: 400px;
+height: 20px;
+padding: 15px;
+font-size: 15px;
+text-indent: 15px;
+}
+
+footer button {
+ background-color: #8e9fff;;
+padding: 15px;
 }
