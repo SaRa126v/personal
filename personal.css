@@ -224,26 +224,23 @@ main p,
   width: max-content;
 }
 
-.main4 div div>div:hover h6 {
-  color: rgba(153, 167, 248, 0.726);
-  transition-duration: 00.25s;
+.svgColor h6 {
   transition-delay: 00.10s;
-}
-
-.main4 div div>div:hover img {
-  /* background-color: rgba(153, 167, 248, 0.726); */
   transition-duration: 00.25s;
-
+}
+.svgColor:hover h6 {
+  color: rgba(153, 167, 248, 0.726);
 }
 
 /* problemmmmmmmmmmmmmmmmmmmmmmmmmmmm */
-.svgtest {
+.svgColor svg {
+  padding: 20px;
   fill: rgb(39, 38, 38);
+  transition-duration: 00.25s;
 }
 
-.svgtest:hover {
+.svgColor:hover svg {
   fill: rgba(153, 167, 248, 0.726);
-  width: 200px;
 }
 
 /* problemmmmmmmmmmmmmmmmmmmmmmmmmmmm */
@@ -276,7 +273,7 @@ main p,
   font-weight: bold;
 }
 
-.containerNumbers div {
+.containerNumbers > div {
   width: max-content;
   margin: 20px 80px;
 }
@@ -290,153 +287,140 @@ main p,
   counter-increment: nameOne;
   content: counter(nameOne);
 
-  animation: count1 1s linear forwards;
+  animation: count1 0.5s linear forwards;
 }
 
 @keyframes count1 {
   0% {
 
     counter-increment: nameOne;
-    /* content: counter(nameOne); */
   }
 
   10% {
 
     counter-increment: nameOne 2124;
-    /* content: counter(nameOne); */
+
   }
 
   20% {
 
     counter-increment: nameOne 2164;
-    /* content: counter(nameOne); */
+
   }
 
   30% {
 
     counter-increment: nameOne 2238;
-    /* content: counter(nameOne); */
+
   }
 
   40% {
 
     counter-increment: nameOne 2259;
-    /* content: counter(nameOne); */
+
   }
 
   50% {
 
     counter-increment: nameOne 2324;
-    /* content: counter(nameOne); */
+
   }
 
   60% {
 
     counter-increment: nameOne 2371;
-    /* content: counter(nameOne); */
+
   }
 
   70% {
 
     counter-increment: nameOne 2446;
-    /* content: counter(nameOne); */
+
   }
 
   80% {
 
     counter-increment: nameOne 2499;
-    /* content: counter(nameOne); */
+
   }
 
   90% {
 
     counter-increment: nameOne 2522;
-    /* content: counter(nameOne); */
+
   }
 
   100% {
 
     counter-increment: nameOne 2536;
-    /* content: counter(nameOne); */
+
   }
 }
 
-/* problemmmmmmmmmmmmmmmmmmmmmmmmmmmm: change numbers + sudden move*/
 .num2 {
   counter-reset: nameTwo;
 }
+
 .num2 h5::before {
   counter-increment: nameTwo;
   content: counter(nameTwo);
 
-  animation: count2 1s linear forwards;
+  animation: count2 0.5s linear forwards;
 }
 
 @keyframes count2 {
   0% {
-
     counter-increment: nameTwo;
-    content: counter(nameTwo);
   }
 
   10% {
 
-    counter-increment: nameTwo 2124;
-    content: counter(nameTwo);
+    counter-increment: nameTwo 2024;
   }
 
   20% {
 
-    counter-increment: nameTwo 2164;
-    content: counter(nameTwo);
+    counter-increment: nameTwo 2964;
   }
 
   30% {
 
-    counter-increment: nameTwo 2238;
-    content: counter(nameTwo);
+    counter-increment: nameTwo 3238;
   }
 
   40% {
 
-    counter-increment: nameTwo 2259;
-    content: counter(nameTwo);
+    counter-increment: nameTwo 3259;
   }
 
   50% {
 
-    counter-increment: nameTwo 2324;
-    content: counter(nameTwo);
+    counter-increment: nameTwo 4324;
   }
 
   60% {
 
-    counter-increment: nameTwo 2371;
-    content: counter(nameTwo);
+    counter-increment: nameTwo 4371;
   }
 
   70% {
 
-    counter-increment: nameTwo 2446;
-    content: counter(nameTwo);
+    counter-increment: nameTwo 4446;
   }
 
   80% {
 
-    counter-increment: nameTwo 2499;
-    content: counter(nameTwo);
+    counter-increment: nameTwo 5499;
   }
 
   90% {
 
-    counter-increment: nameTwo 2522;
-    content: counter(nameTwo);
+    counter-increment: nameTwo 6522;
   }
 
   100% {
 
     counter-increment: nameTwo 6784;
-    content: counter(nameTwo);
   }
 }
 
@@ -445,89 +429,76 @@ main p,
 .num3 {
   counter-reset: nameThree;
 }
+
 .num3 h5::before {
   counter-increment: nameThree;
   content: counter(nameThree);
-  animation: count3 1s linear forwards;
+  animation: count3 0.5s linear forwards;
 }
 
 
 @keyframes count3 {
   0% {
-
     counter-increment: nameThree;
-    content: counter(nameThree);
   }
 
   10% {
-
-    counter-increment: nameThree 2124;
-    content: counter(nameThree);
+    counter-increment: nameThree 1104;
   }
 
   20% {
-
-    counter-increment: nameThree 2164;
-    content: counter(nameThree);
+    counter-increment: nameThree 1164;
   }
 
   30% {
-
-    counter-increment: nameThree 2238;
-    content: counter(nameThree);
+    counter-increment: nameThree 1038;
   }
 
   40% {
 
-    counter-increment: nameThree 2259;
-    content: counter(nameThree);
+    counter-increment: nameThree 2059;
   }
 
   50% {
 
-    counter-increment: nameThree 2324;
-    content: counter(nameThree);
+    counter-increment: nameThree 2124;
   }
 
   60% {
 
-    counter-increment: nameThree 2371;
-    content: counter(nameThree);
+    counter-increment: nameThree 2131;
   }
 
   70% {
 
-    counter-increment: nameThree 2446;
-    content: counter(nameThree);
+    counter-increment: nameThree 2146;
   }
 
   80% {
 
-    counter-increment: nameThree 2499;
-    content: counter(nameThree);
+    counter-increment: nameThree 2200;
   }
 
   90% {
 
-    counter-increment: nameThree 2522;
-    content: counter(nameThree);
+    counter-increment: nameThree 2222;
   }
 
   100% {
 
     counter-increment: nameThree 2239;
-    content: counter(nameThree);
   }
 }
 
 
 .num4 {
   counter-reset: nameFour;
-} 
+}
+
 .num4 h5::before {
   counter-increment: nameFour;
   content: counter(nameFour);
-  animation: count4 1s linear forwards;
+  animation: count4 0.5s linear forwards;
 }
 
 
@@ -535,70 +506,59 @@ main p,
   0% {
 
     counter-increment: nameFour;
-    content: counter(nameFour);
   }
 
   10% {
 
-    counter-increment: nameFour 2124;
-    content: counter(nameFour);
+    counter-increment: nameFour 99;
   }
 
   20% {
 
-    counter-increment: nameFour 2164;
-    content: counter(nameFour);
+    counter-increment: nameFour 146;
   }
 
   30% {
 
-    counter-increment: nameFour 2238;
-    content: counter(nameFour);
+    counter-increment: nameFour 179;
   }
 
   40% {
 
-    counter-increment: nameFour 2259;
-    content: counter(nameFour);
+    counter-increment: nameFour 212;
   }
 
   50% {
 
-    counter-increment: nameFour 2324;
-    content: counter(nameFour);
+    counter-increment: nameFour 254;
   }
 
   60% {
 
-    counter-increment: nameFour 2371;
-    content: counter(nameFour);
+    counter-increment: nameFour 278;
   }
 
   70% {
 
-    counter-increment: nameFour 2446;
-    content: counter(nameFour);
+    counter-increment: nameFour 322;
   }
 
   80% {
 
-    counter-increment: nameFour 2499;
-    content: counter(nameFour);
+    counter-increment: nameFour 392;
   }
 
   90% {
 
-    counter-increment: nameFour 2522;
-    content: counter(nameFour);
+    counter-increment: nameFour 400;
   }
 
   100% {
 
     counter-increment: nameFour 434;
-    content: counter(nameFour);
   }
 }
-/* problemmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+
 
 /* Projects section.................................................*/
 
