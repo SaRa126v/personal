@@ -25,14 +25,16 @@ a {
 
 /* header .......................................................*/
 
+/* problemmmmmmmmmmmmmm: transition + padding + space +shadow + icon  */
+/* 
 header {
-  /* position: relative; */
-  /* background-color: cadetblue; */
-}
+ position: fixed;
+ z-index: 1; 
+} */
+
+/* problemmmmmmmmmmmmmm */
 
 header .container {
-  /* position: fixed;
- z-index: 1; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -80,14 +82,14 @@ header nav>ul>li:hover>ul {
 
 header nav>ul>li>ul>li>ul {
   background-color: #fff;
-  display: none;
+  visibility: hidden;
   position: absolute;
   right: 100%;
   top: 0%;
 }
 
 header nav>ul>li>ul>li:hover>ul {
-  display: block;
+  visibility: hidden;
 }
 
 header nav>ul>li:first-of-type>a {
@@ -98,9 +100,8 @@ header a:hover {
   color: rgb(163, 163, 235);
 }
 
-header nav>ul>li img {
-  width: 12px;
-  vertical-align: middle;
+header a:hover svg {
+  fill: rgb(163, 163, 235);
 }
 
 /* main and flex ............................................................*/
@@ -228,11 +229,11 @@ main p,
   transition-delay: 00.10s;
   transition-duration: 00.25s;
 }
+
 .svgColor:hover h6 {
   color: rgba(153, 167, 248, 0.726);
 }
 
-/* problemmmmmmmmmmmmmmmmmmmmmmmmmmmm */
 .svgColor svg {
   padding: 20px;
   fill: rgb(39, 38, 38);
@@ -243,7 +244,6 @@ main p,
   fill: rgba(153, 167, 248, 0.726);
 }
 
-/* problemmmmmmmmmmmmmmmmmmmmmmmmmmmm */
 
 /* numbers section  .................................................*/
 
@@ -273,12 +273,12 @@ main p,
   font-weight: bold;
 }
 
-.containerNumbers > div {
+.containerNumbers>div {
   width: max-content;
   margin: 20px 80px;
 }
 
-
+/* problemmmmmmmmmmmmmmmmmmmm: display when we see the numbers */
 .num1 {
   counter-reset: nameOne;
 }
@@ -678,10 +678,8 @@ main p,
   margin: 45% 42%;
 }
 
-/* problemmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
 
 /* feedback section................................................ */
-
 
 .feedback {
   height: 550px;
@@ -722,8 +720,6 @@ main p,
 .feedbackH {
   padding: 60px;
 }
-
-/* problemmmmmmmmmmmmmmmmmmmmmmmmm: buttons */
 
 .client1 {
   animation: slide1 8s infinite;
@@ -766,8 +762,30 @@ main p,
   }
 }
 
+.arrows {
+  position: absolute;
+  right: -80px;
+  top: 85px;
+  width: min-content;
+}
 
+.arrows button {
+  width: 40px;
+  height: 50px;
+  background-color: #fff;
+  box-shadow: -8px 8px 10px rgb(225, 224, 231);
+  border: 1px solid rgb(234, 234, 235);
+  transition-duration: 0.25s;
+}
+/* problemmmmmmmmmmmmmmmmmmmmmmmmmmmmmm: white svg*/
 
+.arrows button:hover svg {
+  fill: #fff;
+}
+
+.arrows button:hover {
+  background-color:rgb(163, 163, 235);
+  }
 /* plan section................................................... */
 
 .thePlans {
@@ -897,18 +915,15 @@ main p,
   overflow: hidden;
 }
 
-/* problemmmmmmmmmmmmmmmmmmmm: only the fist img  */
-.post img:first-of-type,
+.imgScale>img,
 .post h6 {
   transition-duration: 1s;
 }
 
-.post:hover img:first-of-type {
+.post:hover .imgScale>img {
   transform: scale(1.10);
   transition: transform 1s;
 }
-
-/* problemmmmmmmmmmmmmmmmmmmm*/
 
 .post:hover h6 {
   color: rgb(163, 163, 235);
